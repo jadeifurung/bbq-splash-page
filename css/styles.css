@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #5a5a5a;
+    background-attachment: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, 
+h2, 
+p {
+    margin-bottom: 0;
+}
