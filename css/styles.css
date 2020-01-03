@@ -25,7 +25,7 @@ h1 {
 
 h1 + p {
   font-size: 1.3125rem;
-  color: #F18119;
+  color: #f18119;
   text-transform: uppercase;
   margin: 0;
 }
@@ -38,7 +38,7 @@ h2 {
 h2 + p {
   font-size: 1rem;
   font-weight: 900;
-  color: #F18119;
+  color: #f18119;
   text-transform: uppercase;
 }
 
@@ -50,9 +50,12 @@ strong {
   text-transform: uppercase;
   font-size: .625rem;
   font-weight: 900;
-  color: #F18119;
+  color: #f18119;
   letter-spacing: 1.5px;
   order: -1;
+  border-top: 5px solid #f18119;
+  padding-top: 2px;
+  border-image: linear-gradient(270deg, #ff895d, #df4E13, #ffa51d) 1;
 }
 
 .fine-print {
@@ -76,7 +79,8 @@ strong {
   flex-direction: column;
   justify-content: space-between;
   background-color: #404040;
-  background-image: url(../images/dark-ribs.jpg);
+  background-image: url(../images/ribs.jpg);
+  background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
   padding: 0 1.5em 2em 1.5em;
@@ -90,7 +94,7 @@ strong {
   justify-content: center;
 }
 
-@media (min-width: 520px) {
+@media (min-width: 600px) {
   body {
     font-size: 1.125rem;
     display: flex;
@@ -110,4 +114,57 @@ strong {
     min-height: 100vh;
     width: 50%;
   }
+}
+
+/* || Input */
+
+input,
+.btn {
+  height: 37px;
+  margin-bottom: .875em;
+  text-align: inherit;
+  font-family: inherit;
+  border-radius: 7px;
+  width: 100%;
+  padding: .25em;
+}
+
+input {
+  border: 1px solid #818181;
+  font-size: 1rem;
+  margin-bottom: .875em;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+input:focus {
+  transform: scale(1.1);
+}
+
+.email-collector {
+  width: 80%;
+  max-width: 300px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 1.5em;
+  font-size: .625rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1em;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-image: linear-gradient(270deg, #ff713b, #ffA51d);
+  color: #ffffff;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  transform: scale(1.1);
 }
